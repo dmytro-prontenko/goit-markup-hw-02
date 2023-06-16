@@ -9,8 +9,9 @@
   --action-color: #404bbf;
   --description-size: 16px;
   --description-height: 24px;
-  --description-lh: 1.5;
-  --letter-spacing: 0.02em;
+  --general-lh: 1.5;
+  --ls-small: 0.02em;
+  --ls-big: 0.04em;
 }
 
 /** COMMON */
@@ -32,13 +33,13 @@ body {
   font-weight: 400;
   font-size: var(--description-size);
   line-height: var(--description-height);
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: var(--ls-small);
 }
 
 .section-title {
   font-size: 36px;
   line-height: 40px;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: var(--ls-small);
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
@@ -49,7 +50,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: var(--description-height);
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: var(--ls-small);
   color: var(--main-text);
 }
 /** HEADER */
@@ -82,7 +83,7 @@ body {
 .nav-link {
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: var(--ls-small);
   color: var(--main-text);
 }
 
@@ -96,7 +97,7 @@ body {
 .contact-item > a {
   font-size: var(--description-size);
   line-height: var(--description-height);
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: var(--ls-small);
   font-weight: 400;
   text-decoration: none;
   color: var(--main-color);
@@ -117,7 +118,7 @@ body {
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: var(--ls-small);
   text-align: center;
 }
 .hero-button {
@@ -126,7 +127,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: var(--ls-big);
   color: #ffffff;
 }
 .hero-button:hover,
@@ -156,9 +157,25 @@ body {
 .footer-description {
   color: #f4f4fd;
   line-height: var(--description-height);
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: var(--ls-small);
 }
 
 /** PORTFOLIO */
 /** MAIN */
+.portfolio-button {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: var(--general-lh);
+  letter-spacing: var(--ls-big);
+  color: var(--accent-color);
+  background-color: var(--light-text);
+  cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:active {
+  background-color: var(--action-color);
+  color: var(--page-color);
+}
 /** SECTION */
