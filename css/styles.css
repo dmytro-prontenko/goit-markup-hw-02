@@ -9,7 +9,7 @@
   --action-color: #404bbf;
   --description-size: 16px;
   --description-height: 24px;
-  --description-spacing: 1.5;
+  --description-lh: 1.5;
   --letter-spacing: 0.02em;
 }
 
@@ -48,8 +48,9 @@ body {
 .section-subtitle {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: var(--description-spacing);
+  line-height: var(--description-height);
+  letter-spacing: var(--letter-spacing);
+  color: var(--main-text);
 }
 /** HEADER */
 
