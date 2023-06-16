@@ -6,6 +6,7 @@
   --light-text: #f4f4fd;
   --logo-accent: #4d5ae5;
   --main-color: #434455;
+  --hover-color: #404bbf;
   --description-size: 16px;
   --description-height: 24px;
   --description-spacing: 1.5;
@@ -16,7 +17,6 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--main-color);
   background-color: #ffffff;
-  color: var(--main-text);
 }
 
 .list {
@@ -79,6 +79,13 @@ body {
   color: var(--main-text);
 }
 
+.nav-link:hover,
+.nav-link:focus,
+.contact-item > a:hover,
+.contact-item > a:focus {
+  color: var(--hover-color);
+}
+
 .contact-item > a {
   font-size: var(--description-size);
   line-height: var(--description-height);
@@ -113,6 +120,8 @@ body {
 
 .footer-description {
   color: #f4f4fd;
+  line-height: var(--description-height);
+  letter-spacing: 0.02em;
 }
 
 /** PORTFOLIO */
