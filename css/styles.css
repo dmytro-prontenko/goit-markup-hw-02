@@ -4,12 +4,13 @@
   --page-color: #ffffff;
   --main-text: #2e2f42;
   --light-text: #f4f4fd;
-  --logo-accent: #4d5ae5;
+  --accent-color: #4d5ae5;
   --main-color: #434455;
-  --hover-color: #404bbf;
+  --action-color: #404bbf;
   --description-size: 16px;
   --description-height: 24px;
   --description-spacing: 1.5;
+  --letter-spacing: 0.02em;
 }
 
 /** COMMON */
@@ -31,12 +32,17 @@ body {
   font-weight: 400;
   font-size: var(--description-size);
   line-height: var(--description-height);
-  letter-spacing: var(--description-spacing);
+  letter-spacing: var(--letter-spacing);
 }
 
 .section-title {
   font-size: 36px;
   line-height: 40px;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--main-text);
 }
 
 .section-subtitle {
@@ -56,10 +62,10 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--logo-accent);
+  color: var(--accent-color);
 }
-.logo-accent {
-  color: var(--logo-accent);
+.accent-color {
+  color: var(--accent-color);
 }
 
 .dark {
@@ -75,7 +81,7 @@ body {
 .nav-link {
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: var(--letter-spacing);
   color: var(--main-text);
 }
 
@@ -83,13 +89,13 @@ body {
 .nav-link:focus,
 .contact-item > a:hover,
 .contact-item > a:focus {
-  color: var(--hover-color);
+  color: var(--action-color);
 }
 
 .contact-item > a {
   font-size: var(--description-size);
   line-height: var(--description-height);
-  letter-spacing: 0.02em;
+  letter-spacing: var(--letter-spacing);
   font-weight: 400;
   text-decoration: none;
   color: var(--main-color);
@@ -107,11 +113,39 @@ body {
   color: #ffffff;
 }
 
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: var(--letter-spacing);
+  text-align: center;
+}
+.hero-button {
+  background-color: var(--accent-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--action-color);
+  cursor: pointer;
+}
+
 /** FEATURES */
 
 /** SOLUTIONS */
 
 /** TEAM */
+.team-section {
+  background-color: #f4f4fd;
+}
+
+.teammate {
+  background-color: var(--page-color);
+}
 
 /** FOOTER */
 .footer {
@@ -121,7 +155,7 @@ body {
 .footer-description {
   color: #f4f4fd;
   line-height: var(--description-height);
-  letter-spacing: 0.02em;
+  letter-spacing: var(--letter-spacing);
 }
 
 /** PORTFOLIO */
